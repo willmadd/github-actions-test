@@ -26,3 +26,5 @@ jobs:
           server: ftp.pnrconverter.net
           username: u225028512.githubactions
           password: ${{secrets.password}}
+          # dangerous-clean-slate
+          local-dir: ./build/
