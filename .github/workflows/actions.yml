@@ -17,7 +17,7 @@ jobs:
           npm run build
 
       - name: Sync Files
-        uses: SamKirkland/FTP-Deploy-Actions@4.1.0
+        uses: SamKirkland/FTP-Deploy-Action@4.3.2
         with:
           server: ftp.pnrconverter.net
           username: u225028512.githubactions
