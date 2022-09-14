@@ -33,4 +33,4 @@ jobs:
           username: u225028512.githubactions
           password: ${{secrets.password}}
           # dangerous-clean-slate
-          local-dir: ./build/
+          # local-dir: ./build/
