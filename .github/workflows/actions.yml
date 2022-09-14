@@ -7,6 +7,12 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
+      - name: create .env
+        run: |
+          touch .env
+          echo API_ENDPOINT="https://www.example.com" >> .env
+          echo API_KEY=${{ secrets.TEST }} >> .env
+          cat .env
       - name: get latest code
         uses: actions/checkout@v2
 
